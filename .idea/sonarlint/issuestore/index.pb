@@ -9,3 +9,5 @@ Y
 -src/test/java/org/example/CalculatorTest.java,d\d\ddf9d3f44eebbd90607904161f037b4aeea53ec5
 s
 Csrc/test/java/org/example/generator/SimpleDisplayNameGenerator.java,5\5\55290d12da89602717fc6118c990ed7ec9e3713a
+V
+&src/test/java/org/example/TagTest.java,9\b\9b83f7db10430c9d1d1a5a65bd371dfb4482c14c

@@ -1,14 +1,21 @@
 package org.example;
 
 import org.example.generator.SimpleDisplayNameGenerator;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 @DisplayName("Calculator Test")
 @DisplayNameGeneration(value = SimpleDisplayNameGenerator.class)
 public class CalculatorTest {
+
+    @BeforeEach
+    public void setUp(){
+        System.out.println("Before Each Test");
+    }
+
+    @AfterEach
+    public void tearDown(){
+        System.out.println("After Each Test");
+    }
 
     private Calculator calculator = new Calculator();
 
@@ -20,6 +27,7 @@ public class CalculatorTest {
     }
 
     @Test
+//    @Disabled  // to skip
     void divideSuccessTest(){
         int result = calculator.divide(10, 10);
         Assertions.assertEquals(1, result);
